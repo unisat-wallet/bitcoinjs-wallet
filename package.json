@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/unisat-wallet/bitcoinjs-wallet.git"
   },
-  "license": "MIT",
+  "license": "ISC",
   "author": "Kervin",
   "main": "lib/index.js",
   "module": "es/index.js",

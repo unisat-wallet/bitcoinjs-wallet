@@ -6,12 +6,19 @@
     "bitcoin",
     "keyring"
   ],
+  "homepage": "https://github.com/unisat-wallet/bitcoinjs-wallet#readme",
+  "bugs": {
+    "url": "https://github.com/unisat-wallet/bitcoinjs-wallet/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unisat-wallet/bitcoinjs-wallet.git"
+  },
+  "license": "MIT",
+  "author": "Kervin",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "lib/index.d.ts",
-  "engines": {
-    "node": ">=12.0.0"
-  },
   "files": [
     "/es",
     "/lib"
@@ -22,8 +29,6 @@
     "build:esm": "rimraf es && cross-env BABEL_ENV=esm gulp build",
     "build:typed": "tsc --declaration --emitDeclarationOnly --noEmit false"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "bitcoinjs-lib": "^6.1.0",
     "browserify": "^17.0.0",
@@ -56,5 +61,12 @@
     "watchify": "^4.0.0",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
